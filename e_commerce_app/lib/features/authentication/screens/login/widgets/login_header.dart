@@ -1,0 +1,31 @@
+import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/sizes.dart';
+import 'package:e_commerce_app/utils/constants/text_string.dart';
+import 'package:e_commerce_app/utils/helpers/helper_function.dart';
+import 'package:flutter/material.dart';
+
+class LoginHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final dark = HelperFunctions.isDarkMode(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image(
+          height: 150,
+          image: AssetImage(dark ? TImage.lightAppLogo : TImage.darkAppLogo),
+        ),
+        Text(
+          TTexts.loginTitle,
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
+        const SizedBox(height: TSizes.sm),
+        Text(
+          TTexts.loginSubTitle,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      ],
+    );
+  }
+}
