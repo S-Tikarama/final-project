@@ -40,7 +40,7 @@ import 'package:get/get.dart';
 
             //Submit Button
 
-            SizedBox(width:double.infinity,child: ElevatedButton(onPressed: ()=>Get.to(()=> const ResetPassword()), child: Text(TTexts.submit))),
+            SizedBox(width:double.infinity,child: ElevatedButton(onPressed: ()=>Get.off(()=> const ResetPassword()), child: Text(TTexts.submit))),
           ],
         ),
       ),
