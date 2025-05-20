@@ -15,4 +15,16 @@ class TImage {
       'assets/images/on_boarding_images/shopping.gif';
   static const String onBoardingImage3 =
       'assets/images/on_boarding_images/delivery.gif';
+
+
+      // --Animations
+
+
+
+      // --Category Icons
+
+      static const String sportIcon =
+      'assets/icons/categories/sport.jpg';
+
+
 }
