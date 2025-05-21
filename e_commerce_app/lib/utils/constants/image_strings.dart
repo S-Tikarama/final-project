@@ -1,6 +1,7 @@
 class TImage {
   // --App logos
-  static const String darkAppLogo = 'assets/images/on_boarding_images/searching.gif';
+  static const String darkAppLogo =
+      'assets/images/on_boarding_images/searching.gif';
   static const String lightAppLogo = '';
 
   // --Social Logos
@@ -16,15 +17,14 @@ class TImage {
   static const String onBoardingImage3 =
       'assets/images/on_boarding_images/delivery.gif';
 
+  // --Animations
 
-      // --Animations
+  // --Category Icons
 
+  static const String sportIcon = 'assets/icons/categories/sport.png';
 
+  //--Banners
 
-      // --Category Icons
-
-      static const String sportIcon =
-      'assets/icons/categories/sport.jpg';
-
-
+  static const String promoBanners1 = 'assets/images/banners/gold star.png';
+  static const String promoBanners2 = 'assets/images/banners/men fashion.jpg';
 }

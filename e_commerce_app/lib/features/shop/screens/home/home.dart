@@ -1,13 +1,15 @@
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:e_commerce_app/common/widgets/custom_shapes/containers/circular_containar.dart';
 import 'package:e_commerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:e_commerce_app/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:e_commerce_app/common/widgets/image_text_widgets/vertical_image_text.dart';
+import 'package:e_commerce_app/common/widgets/images/round_image.dart';
 import 'package:e_commerce_app/common/widgets/texts/section_heading.dart';
-import 'package:e_commerce_app/features/shop/home/widgets/home_appbar.dart';
-import 'package:e_commerce_app/features/shop/home/widgets/home_categories.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
-import 'package:e_commerce_app/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,6 +51,12 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: PromoSlider(
+                banners: [TImage.promoBanners1, TImage.promoBanners2],
               ),
             ),
           ],

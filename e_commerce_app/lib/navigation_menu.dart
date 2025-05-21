@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/features/shop/home/home.dart';
+import 'package:e_commerce_app/features/shop/screens/home/home.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
