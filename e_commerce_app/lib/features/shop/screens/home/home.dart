@@ -1,8 +1,9 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:e_commerce_app/common/widgets/custom_shapes/containers/circular_containar.dart';
 import 'package:e_commerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:e_commerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_commerce_app/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:e_commerce_app/common/widgets/images/round_image.dart';
+import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
+import 'package:e_commerce_app/common/widgets/products/product_carts/product_cart_vertical.dart';
 import 'package:e_commerce_app/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
@@ -10,6 +11,7 @@ import 'package:e_commerce_app/features/shop/screens/home/widgets/promo_slider.d
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
+import 'package:e_commerce_app/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,6 +19,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = HelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -53,10 +56,21 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            // Body
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
-              child: PromoSlider(
-                banners: [TImage.promoBanners1, TImage.promoBanners2],
+
+              //Promo Slider
+              child: Column(
+                children: [
+                  PromoSlider(
+                    banners: [TImage.promoBanners1, TImage.promoBanners2],
+                  ),
+                  SizedBox(height: TSizes.spaceBtnSection),
+
+                  //Populer Product
+                  GridLayout(itemCount: 2, itemBuilder: (_, index) => ProductCartVertical()),
+                ],
               ),
             ),
           ],

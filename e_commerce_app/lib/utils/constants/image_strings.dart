@@ -27,4 +27,8 @@ class TImage {
 
   static const String promoBanners1 = 'assets/images/banners/gold star.png';
   static const String promoBanners2 = 'assets/images/banners/men fashion.jpg';
+
+  // Products
+
+  static const String productImage1 = 'assets/images/products/gold star.jpg';
 }
