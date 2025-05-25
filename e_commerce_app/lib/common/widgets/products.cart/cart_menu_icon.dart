@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
-    super.key, required this.onPressed, required this.iconColor,
+    super.key, required this.onPressed, required this.iconColor ,
   });
   final VoidCallback onPressed;
   final Color iconColor;
@@ -16,7 +16,7 @@ class CartCounterIcon extends StatelessWidget {
         IconButton(
           onPressed: () {},
           icon: Icon(
-            Icons.shopping_bag,
+            Icons.shopping_bag_outlined,
             color: iconColor,
           ),
         ),

@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class ProductPriceText extends StatelessWidget {
@@ -22,6 +23,6 @@ class ProductPriceText extends StatelessWidget {
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
       style:islarge ? Theme.of(context).textTheme.headlineMedium!.apply(decoration: lineThrough ? TextDecoration.lineThrough:null):Theme.of(context)
-.textTheme.titleLarge!.apply(decoration: lineThrough ? TextDecoration.lineThrough:null),    );
+.textTheme.titleLarge!.apply(decoration: lineThrough ? TextDecoration.lineThrough:null) ,    );
   }
 }

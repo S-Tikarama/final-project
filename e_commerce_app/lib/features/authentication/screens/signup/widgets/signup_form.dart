@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class SignupForm extends StatelessWidget {
-  const SignupForm();
+  const SignupForm({super.key});
 
  
 
