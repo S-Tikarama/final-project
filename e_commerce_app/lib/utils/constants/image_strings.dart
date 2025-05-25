@@ -23,6 +23,10 @@ class TImage {
 
   static const String sportIcon = 'assets/icons/categories/sport.png';
 
+
+  // -- User
+  static const String user = 'assets/images/user/user_image.png';
+
   //--Banners
 
   static const String promoBanners1 = 'assets/images/banners/gold star.png';
