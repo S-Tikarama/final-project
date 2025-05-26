@@ -6,12 +6,14 @@ import 'package:flutter/material.dart';
 
 class UserProfileTile extends StatelessWidget {
   const UserProfileTile({
-    super.key,
+    super.key, this.onPressed,
   });
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      
       leading: CircularImage(
         image: TImage.user,
         width: 50,
@@ -30,8 +32,10 @@ class UserProfileTile extends StatelessWidget {
           context,
         ).textTheme.bodyMedium!.apply(color: TColors.white),
       ),
-      trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.edit, color: TColors.white,)),
+      trailing: IconButton(onPressed: onPressed, icon: const Icon(Icons.edit, color: TColors.white,)),
+      
     
     );
+    
   }
 }
