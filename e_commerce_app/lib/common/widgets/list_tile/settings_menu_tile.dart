@@ -1,6 +1,5 @@
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_utils/get_utils.dart';
 
 class SettingsMenuTile extends StatelessWidget {
   const SettingsMenuTile({
