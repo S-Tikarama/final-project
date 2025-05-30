@@ -2,7 +2,7 @@ class TImage {
   // --App logos
   static const String darkAppLogo =
       'assets/images/on_boarding_images/searching.gif';
-  static const String lightAppLogo = '';
+  static const String lightAppLogo = 'assets/images/user/user_image.png';
 
   // --Social Logos
   static const String google = 'assets/logos/google_icon.png';
@@ -33,6 +33,9 @@ class TImage {
   static const String promoBanners2 = 'assets/images/banners/men fashion.jpg';
 
   // Products
+  static const String productImage1 = 'assets/images/products/gold star.png';
+  static const String productImage2 = 'assets/images/products/caliber.jpg';
+  
+ 
 
-  static const String productImage1 = 'assets/images/products/gold star.jpg';
 }

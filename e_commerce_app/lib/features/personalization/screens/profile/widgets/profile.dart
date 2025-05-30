@@ -1,7 +1,7 @@
 import 'package:e_commerce_app/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce_app/common/widgets/images/circular_image.dart';
 import 'package:e_commerce_app/common/widgets/texts/section_heading.dart';
-import 'package:e_commerce_app/features/personalization/screens/widgets/profile_menu.dart';
+import 'package:e_commerce_app/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';

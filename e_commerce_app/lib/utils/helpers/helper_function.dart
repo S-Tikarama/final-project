@@ -120,4 +120,6 @@ class HelperFunctions {
     }
     return wrappedList;
   }
+
+  static isDark(BuildContext context) {}
 }
